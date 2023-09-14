@@ -1,0 +1,121 @@
+@import "../../styles/mixins";
+
+.contact-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--col-dark-grey);
+  padding: 160px var(--active-margin-grid);
+
+  @include small-screen() {
+    height: auto;
+  }
+
+  @include tablet-screen() {
+    padding: 160px var(--active-margin-grid) 120px;
+  }
+
+  @include mobile-screen() {
+    padding: 120px var(--active-margin-grid) 100px;
+  }
+
+  .mid-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 80px;
+
+    @include large-screen {
+      gap: 40px;
+    }
+
+    @include tablet-screen {
+      flex-flow: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+
+  .contact-img-container {
+    width: clamp(360px, 24vw, 24vw);
+    height: auto;
+    aspect-ratio: 2/3;
+    margin-left: 15.6vw;
+    margin-right: 7.8vw;
+    user-select: none;
+    z-index: 10;
+
+    @include large-screen {
+      margin-left: 7.8vw;
+      margin-right: 7.8vw;
+    }
+
+    @include small-screen {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include tablet-screen {
+      width: clamp(270px, 70%, 360px);
+      margin-left: 0vw;
+      margin-right: 0px;
+    }
+  }
+
+  .contact-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;
+    clip-path: inset(100% 0% 0% 0%);
+    transition: clip-path 1s var(--custom-ease-in);
+    
+    &.is-reveal {
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+
+  .links-container {
+    display: flex;
+    flex-flow: row;
+    width: fit-content;
+    gap: 40px;
+
+    @include tablet-screen {
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      gap: 32px;
+      margin-top: 40px;
+    }
+  }
+
+  .links {
+    margin-bottom: 24px;
+
+    @include large-screen {
+      margin-bottom: 0;
+    }
+
+    .link-title {
+      font-size: 1.6rem;
+      color: var(--col-neutral);
+      margin-bottom: 24px;
+    }
+
+    .link {
+      cursor: pointer;
+      width: fit-content;
+      margin-bottom: 16px;
+    }
+  }
+
+  .designed-by {
+    position: absolute;
+    left: var(--active-margin-grid);
+    bottom: 40px;
+    z-index: 10;
+  }
+}

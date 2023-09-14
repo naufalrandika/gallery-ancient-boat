@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "https://gallery.desawisatapunjulharjo.com/static/css/main.5d701035.css",
+    "main.js": "https://gallery.desawisatapunjulharjo.com/static/js/main.be95a9a5.js",
+    "static/js/787.a2cb61a6.chunk.js": "https://gallery.desawisatapunjulharjo.com/static/js/787.a2cb61a6.chunk.js",
+    "static/media/GOPR1444.JPG": "https://gallery.desawisatapunjulharjo.com/static/media/GOPR1444.c9d25370f1f0ffaaa38b.JPG",
+    "static/media/GOPR1431.JPG": "https://gallery.desawisatapunjulharjo.com/static/media/GOPR1431.6aafcd6cb5643600d491.JPG",
+    "static/media/GOPR1423.JPG": "https://gallery.desawisatapunjulharjo.com/static/media/GOPR1423.d3eb8bf29e808092bc0e.JPG",
+    "static/media/GOPR1426.JPG": "https://gallery.desawisatapunjulharjo.com/static/media/GOPR1426.2f7b50ca518c88335f79.JPG",
+    "static/media/GOPR1435.JPG": "https://gallery.desawisatapunjulharjo.com/static/media/GOPR1435.9976ef636b6456c9d834.JPG",
+    "static/media/GOPR1432.JPG": "https://gallery.desawisatapunjulharjo.com/static/media/GOPR1432.05faeba414e00464c462.JPG",
+    "static/media/drop.mp4": "https://gallery.desawisatapunjulharjo.com/static/media/drop.4318769c82155aea186e.mp4",
+    "static/media/contact.webp": "https://gallery.desawisatapunjulharjo.com/static/media/contact.3b2a913d2289eab81eda.webp",
+    "static/media/about.webp": "https://gallery.desawisatapunjulharjo.com/static/media/about.aadcb2cda12f5afd824c.webp",
+    "static/media/hero-background.webp": "https://gallery.desawisatapunjulharjo.com/static/media/hero-background.da430ff20d4067194287.webp",
+    "static/media/boat.glb": "https://gallery.desawisatapunjulharjo.com/static/media/boat.06830fad297ff40e6f48.glb",
+    "static/media/Humane-Medium.ttf": "https://gallery.desawisatapunjulharjo.com/static/media/Humane-Medium.da34256b90ae09b35748.ttf",
+    "static/media/logo.svg": "https://gallery.desawisatapunjulharjo.com/static/media/logo.a0e8b656523b0fe8891f601c388a613b.svg",
+    "index.html": "https://gallery.desawisatapunjulharjo.com/index.html",
+    "main.5d701035.css.map": "https://gallery.desawisatapunjulharjo.com/static/css/main.5d701035.css.map",
+    "main.be95a9a5.js.map": "https://gallery.desawisatapunjulharjo.com/static/js/main.be95a9a5.js.map",
+    "787.a2cb61a6.chunk.js.map": "https://gallery.desawisatapunjulharjo.com/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d701035.css",
+    "static/js/main.be95a9a5.js"
+  ]
+}

@@ -1,0 +1,87 @@
+@import "../../styles/mixins";
+
+.about-section {
+  // background: var(--col-dark-grey);
+  background: black; /* Gradient from grey to black */
+  width: 100%;
+  height: auto;
+  padding: 200px var(--active-margin-grid) 320px;
+  position: relative;
+
+  @include small-screen() {
+    padding: 120px var(--active-margin-grid) 160px;
+  }
+}
+
+.about-canvas {
+  width: 52vw;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+
+  @include large-screen() {
+    aspect-ratio: 4 / 3;
+  }
+
+  @include tablet-screen() {
+    width: 100%;
+  }
+
+  .about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    will-change: transform;
+    clip-path: inset(100% 0% 0% 0%);
+    transition: clip-path 1s var(--custom-ease-in);
+
+    &.is-reveal {
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+}
+
+
+.about-attached {
+  width: fit-content;
+  position: relative;
+  margin-top: -280px;
+
+  @include large-screen() {
+    margin-top: -160px;
+  }
+
+  @include tablet-screen() {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  &-title {
+    @include tablet-screen {
+      text-align: right;
+    }
+  }
+
+  &-text {
+    position: absolute;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.about-instaram-section {
+  background: var(--col-dark);
+  width: 100%;
+  height: auto;
+  padding: 280px var(--active-margin-grid) 160px;
+
+  @include small-screen() {
+    padding: 160px var(--active-margin-grid);
+  }
+}
+
+.golden-text {
+  color: gold;
+}

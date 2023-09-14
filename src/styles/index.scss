@@ -1,0 +1,62 @@
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --col-white: #F6F6F6;
+  --col-white-grey: #C6C6C6;
+  --col-neutral: #919191;
+  --col-dark-grey: #212121;
+  --col-dark: #101010;
+
+  --active-margin-grid: 80px;
+
+  @include small-screen() {
+    --active-margin-grid: 32px;
+  }
+
+  @include tablet-screen() {
+    --active-margin-grid: 32px;
+  }
+
+  @include mobile-screen() {
+    --active-margin-grid: 24px;
+  }
+
+  --custom-ease-in: cubic-bezier(0.77, 0, 0.175, 1);
+  ;
+  --custom-ease-out: cubic-bezier(.24, .74, .24, .99);
+  --custom-ease-in-out: cubic-bezier(.42, 0, .31, 1);
+  --x: 0;
+  --y: 0;
+  --vh: 100vh;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("../fonts/Humane-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =============================== */
+/* ========== MAIN CODE ========== */
+/* =============================== */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background: var(--col-dark);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+}

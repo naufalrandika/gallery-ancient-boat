@@ -1,0 +1,104 @@
+/* Hero.scss */
+
+@import "../../styles/mixins";
+
+.main-hero-section,
+.about-hero-section {
+  width: 100%;
+}
+
+.main-hero-section {
+  background: linear-gradient(180deg, rgba(33, 33, 33, 0) 75%, #212121 100%),
+    url("../../images/hero-background.webp"),
+    radial-gradient(50% 128% at 50% 50%, #2D2D2D 0%, #101010 100%),
+    linear-gradient(180deg, #2D2D2D 0%, #101010 42.19%, #101010 58.33%, #2D2D2D 100%);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 32vh var(--active-margin-grid) 0;
+
+  @include tablet-screen {
+    padding: 40vh var(--active-margin-grid) 0;
+  }
+
+  .container-title {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-flow: column;
+    gap: 32px;
+
+    .from-france {
+      @include tablet-screen {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .hero-3d {
+	width: clamp(360px, 24vw, 24vw);
+	height: auto;
+	aspect-ratio: 2/3;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	filter: drop-shadow(10px 20px 40px rgba(0, 0, 0, 0.25));
+	will-change: transform;
+	clip-path: inset(100% 0% 0% 0%);
+	transition: clip-path 1s var(--custom-ease-in);
+  
+	&.is-reveal {
+	  clip-path: inset(0% 0% 0% 0%);
+	}
+  
+	&:after {
+	  content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  right: 0;
+	}
+  
+	@include tablet-screen {
+	  top: 400px;
+	  width: clamp(270px, 70%, 360px);
+	}
+  
+	canvas {
+	  width: 100%;
+	  height: 100%;
+	}
+  }
+
+  .mute-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.scroll-text {
+  position: absolute !important;
+  bottom: 40px;
+  right: var(--active-margin-grid);
+
+  @include tablet-screen {
+    display: none;
+  }
+}
